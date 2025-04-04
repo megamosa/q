@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin" title="Magento Admin">
+                <resource id="Magento_Sales::sales" title="Sales">
+                    <resource id="Magento_Sales::sales_operation" title="Sales Operations">
+                        <resource id="MagoArab_OrderStatusPermissions::order_status_management" title="Custom Order Status Permissions" translate="title" sortOrder="50" />
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

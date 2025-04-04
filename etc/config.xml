@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <sales_order_status_permissions>
+            <general>
+                <enabled>1</enabled>
+                <log_actions>0</log_actions>
+            </general>
+            <advanced>
+                <hide_forbidden_orders>1</hide_forbidden_orders>
+                <include_admin_users>0</include_admin_users>
+            </advanced>
+        </sales_order_status_permissions>
+    </default>
+</config>

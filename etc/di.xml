@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Acl\AclResource\Provider">
+        <plugin name="magoarab_orderstatus_permissions_acl_provider" 
+                type="MagoArab\OrderStatusPermissions\Plugin\Magento\Framework\Acl\AclResource\Provider" 
+                sortOrder="100" disabled="false" />
+    </type>
+    <type name="Magento\Sales\Model\ResourceModel\Order\Grid\Collection">
+        <plugin name="magoarab_orderstatus_permissions_grid_collection" 
+                type="MagoArab\OrderStatusPermissions\Plugin\Magento\Sales\Model\ResourceModel\Order\Grid\Collection" 
+                sortOrder="100" disabled="false" />
+    </type>
+    <type name="Magento\Sales\Controller\Adminhtml\Order\View">
+        <plugin name="magoarab_orderstatus_permissions_order_view" 
+                type="MagoArab\OrderStatusPermissions\Plugin\Magento\Sales\Controller\Adminhtml\Order\View" 
+                sortOrder="100" disabled="false" />
+    </type>
+</config>
